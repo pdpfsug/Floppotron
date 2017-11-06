@@ -20,18 +20,22 @@ Scomprimi il file compresso:
   unzip $(ls -rt | tail -n1)
 
 Nel mentre inserisci la micro SD nel computer. 
+
 Visualizza il percorso della SD:
 
   .. highlight:: console
   lsblk
 
-Scrivi la ISO sulla SD, il processo formattera' la SD. 
-Sostituisci *<iso>* con il nome del file appena estratto. 
-Sostituisci *<dev>* con il percorso della SD, solitamente **/dev/sdb**. 
+Scrivi la ISO sulla SD, il processo formattera' la SD.
+
+Sostituisci *<iso>* con il nome del file appena estratto.
+
+Sostituisci *<dev>* con il percorso della SD, solitamente **/dev/sdb**.
+
 EX. ``dd if=2017-09-07-raspbian-stretch-lite.img of=/dev/sdb status=progress``
 
   .. highlight:: console
-  umount <dev>
+  umount <dev> 
   dd if=<iso> of=<dev> status=progress
 
 
@@ -72,7 +76,9 @@ Clona il repository `Floppotron <https://github.com/pdpfsug/Floppotron.git>`_
 
   .. highlight:: console
   apt-get install git -y
+
   cd /home/pi
+
   git clone https://github.com/pdpfsug/Floppotron.git
 
 Installa la libreria WiringPi: 
