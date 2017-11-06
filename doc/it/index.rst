@@ -13,7 +13,8 @@ Contents:
    
    intro
    materiale
-   howto
+   floppy
+   raspberry
 
 
 
